@@ -1,6 +1,5 @@
 import { CarCard, Hero, ShowMore } from '@/components'
 import { CustomFilter, SearchBar } from '@/components'
-import Image from 'next/image'
 import { fetchCars } from '@/utils'
 import { HomeProps } from '@/types'
 import { fuels, yearsOfProduction } from '@/constants'
