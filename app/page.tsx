@@ -12,9 +12,7 @@ export default async function Home({ searchParams }: HomeProps) {
     model: searchParams.model || '',
     pageNumber: searchParams.pageNumber || 1
   })
-
   const isDataEmpty = !Array.isArray(allCars) || allCars.length === 0
-  console.log('🚀 ~ file: page.tsx:7 ~ Home ~ allCars:', allCars)
   return (
     <main className="overflow-hidden">
       <Hero />
@@ -41,7 +39,6 @@ export default async function Home({ searchParams }: HomeProps) {
               pageNumber={(searchParams.limit || 10) / 10}
               isNext={(searchParams.limit || 10) >= allCars.length}
             />
-            <p>allCars.length{allCars.length}</p>
           </section>
         ) : (
           <div className="home__error-container">
