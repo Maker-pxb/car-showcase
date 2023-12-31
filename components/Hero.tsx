@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import CustomButton from './CustermButton'
+import CustomButton from './CustomButton'
 
 const Hero = () => {
   const handleScroll = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
         <CustomButton
           title="Explore Cars"
-          containerStyle="bg-primary-blue text-white rounded-full mt-10"
+          containerStyles="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}
         />
       </div>
